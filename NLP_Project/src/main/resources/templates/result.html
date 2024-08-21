@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>NLP Statistics Result</title>
+</head>
+<body>
+    <h1>NLP Statistics Result</h1>
+    <h2>Input Text Statistics</h2>
+    <table border="1">
+        <tr><th>Statistic</th><th>Value</th></tr>
+        <tr><td>Word Count</td><td th:text="${inputStats['Word Count']}"></td></tr>
+        <tr><td>Sentence Count</td><td th:text="${inputStats['Sentence Count']}"></td></tr>
+        <tr><td>Noun Count</td><td th:text="${inputStats['Noun Count']}"></td></tr>
+        <tr><td>Verb Count</td><td th:text="${inputStats['Verb Count']}"></td></tr>
+        <tr><td>Adjective Count</td><td th:text="${inputStats['Adjective Count']}"></td></tr>
+    </table>
+
+    <h2>Aggregated Statistics</h2>
+    <table border="1">
+        <tr><th>Statistic</th><th>Value</th></tr>
+        <tr><td>Word Count</td><td th:text="${aggregatedStats['avg_word_count']}"></td></tr>
+        <tr><td>Sentence Count</td><td th:text="${aggregatedStats['avg_sentence_count']}"></td></tr>
+        <tr><td>Noun Count</td><td th:text="${aggregatedStats['avg_noun_count']}"></td></tr>
+        <tr><td>Verb Count</td><td th:text="${aggregatedStats['avg_verb_count']}"></td></tr>
+        <tr><td>Adjective Count</td><td th:text="${aggregatedStats['avg_adj_count']}"></td></tr>
+    </table>
+
+    <h2>Comparison</h2>
+    <table border="1">
+        <tr><th>Statistic</th><th>Difference</th></tr>
+        <tr><td>Word Count</td><td th:text="${comparison['Word Count']}"></td></tr>
+        <tr><td>Sentence Count</td><td th:text="${comparison['Sentence Count']}"></td></tr>
+        <tr><td>Noun Count</td><td th:text="${comparison['Noun Count']}"></td></tr>
+        <tr><td>Verb Count</td><td th:text="${comparison['Verb Count']}"></td></tr>
+        <tr><td>Adjective Count</td><td th:text="${comparison['Adjective Count']}"></td></tr>
+    </table>
+</body>
+</html>
