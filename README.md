@@ -20,7 +20,7 @@ Ensure you have the following installed:
 
 - Python (version 3.7 or above)
 - Java (JDK 8 or above)
-- Maven (for managing Java dependencies)
+- Maven
 
 ## Python Setup
 1. Clone the repository
