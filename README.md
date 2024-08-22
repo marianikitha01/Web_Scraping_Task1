@@ -52,7 +52,7 @@ private static final String AGGREGATED_STATS_FILE = "C:\\Users\\Nikitha\\Desktop
 - Open your IDE and locate the NlpAppApplication file (NLP_Project\src\main\java\com\task1\NLP_Project).
 - Right-click on it and select Run As -> Spring Boot App.
 
-**Note:** By default, the server will run on server.port=8081. If port 8081 is busy, or if you prefer to use the default port 8080, you can change the port configuration in the 'application.properties' file located at: NLP_Project\src\main\resources\application.properties
+**Note:** By default, the server will run on server.port=8081. If port 8081 is busy, or if you prefer to use the default port 8080, you can change the port configuration in the 'application.properties' file located at: NLP_Project\src\main\resources\application.properties.
 
 5. Access the application at http://localhost:8081 in your web browser.
 
